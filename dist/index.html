@@ -4,9 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>colorala - Free Color Palette Generator for Designers!</title>
+    <link rel="icon" type="image/x-icon" href="/Colorala%20avatar.2b4343d1.png">
+    <meta name="description" content="Create the Best Looking Color Palette, use Palette Generator, get inspired by Pre-made Color Palettes, check latest Website Color Preview tool">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- --------- GOOGLE ANALYTICS ---------- -->
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-X147WWY90R"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag("js", new Date());
+gtag("config", "G-X147WWY90R");
+
+</script>
+
+    <!-- //////////////
+    Scripts executed in order - async 'defer' attr. -->
+    <script defer="" src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer="" src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer="" src="/index.e37f48ea.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/index.b10d73a7.css">
+    <!-- ________________ -->
   </head>
   <body>
-    <h1>Hello world</h1>
-  <script src="/colorala.3464ddca.js"></script></body>
+    <app-nav></app-nav>
+    <header class="home-page-content">
+      <div class="main-wrapper">
+        <div class="welcome-section">
+          <h1>
+            The coolest<br>
+            <span>color palette</span><br>
+            generator!
+          </h1>
+          <p>
+            Generate random colors or explore pre-made palettes with colorala
+          </p>
+          <div>
+            <a href="/color-palette-generator"><button class="secondary-button">Color Generator!</button></a>
+
+            <a href="/pre-made-color-palettes"><button class="primary-button">Pre-made Palettes!</button></a>
+          </div>
+        </div>
+        <div>
+          <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_b5mxg937.json" background="transparent" speed="1" loop="" autoplay="" class="colors-animation"></lottie-player>
+        </div>
+      </div>
+
+      <a class="whatsNewBtn" href="">
+        <div class="what-is-new">
+          <h4><span>NEW</span> colorala v2.0</h4>
+          <button>
+            <i class="ri-arrow-down-line"></i>
+          </button>
+        </div>
+      </a>
+    </header>
+
+    <section class="section-divider home-section-1">
+      <div class="home-section-1-wrapper">
+        <div>
+          <h4>NEW FEATURE</h4>
+          <h2>Website Color Preview!</h2>
+          <p>
+            Check out new tool! Test live selected colors! Does it sound cool?
+            😲
+            <span class="highlight">Check now</span> what your color scheme
+            looks like.
+          </p>
+          <a href="/website-color-preview"><button class="secondary-button">Check!</button></a>
+          <p class="additional-info">
+            Would you like to get more info about functionalities and app
+            development?
+            <a class="highlight" target="_blank" href="https://github.com/maciejkuran/colorala.com">Please visit GitHub!</a>
+          </p>
+        </div>
+        <div>
+          <img src="/live%20website%20preview.80df5301.gif" alt="colorala website colors preview">
+        </div>
+      </div>
+    </section>
+
+    <section class="section-divider home-section-2">
+      <img src="/Avatar%20Maciej%20Kuran-Janowski.4b128d61.png" alt="Maciej Kuran-Janowski colorala">
+      <h4>Hi! I'm Maciej.</h4>
+      <h3>Help me to develop this app further!</h3>
+      <p>
+        Lots of work accomplished so far. I worked diligently to implement all
+        functionalities. I want to remain objective and meet user expectations.
+        Therefore, feel free to submit your request via
+        <span class="highlight"> GitHub -&gt; issues. </span>
+      </p>
+      <a target="_blank" href="https://github.com/maciejkuran/colorala.com/issues">
+        <button class="secondary-button">
+          Request
+          <i class="ri-github-line github-icon"></i>
+        </button>
+      </a>
+    </section>
+
+    <app-footer></app-footer>
+    <div class="overlay-modal hide"></div>
+    <div class="overlay-modal-cookies hide"></div>
+
+    <from-creator-popup></from-creator-popup>
+    <cookies-popup></cookies-popup>
+  </body>
 </html>

@@ -1,0 +1,80 @@
+//color picker styles
+
+.pcr-app {
+  background-color: var(--color-lightgrey);
+}
+
+.custom-class .pcr-swatches {
+  display: none;
+}
+
+.pcr-selection .pcr-color-preview .pcr-last-color {
+  display: none;
+}
+
+.pcr-app[data-theme='classic'] {
+  padding: 0.8em;
+  border-radius: 12px;
+}
+
+.pcr-app[data-theme='classic']
+  .pcr-selection
+  .pcr-color-preview
+  .pcr-current-color {
+  height: 100%;
+  width: 200%;
+}
+
+.pcr-app .pcr-interaction .pcr-save1,
+.pcr-app .pcr-interaction .pcr-save2,
+.pcr-app .pcr-interaction .pcr-save3,
+.pcr-app .pcr-interaction .pcr-save4 {
+  background-color: var(--color-darkblue);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 1.5em;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.pcr-app .pcr-interaction {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -0.2em 0 -0.2em;
+}
+
+.pcr-app .pcr-interaction input {
+  font-size: 1.3em;
+  color: #75797e;
+  background: #f1f3f4;
+  border-radius: 5px;
+}
+
+.pcr-app .pcr-interaction .pcr-type.active {
+  color: var(--color-lightgrey);
+  background: var(--color-middlegrey);
+}
+
+.pickr .pcr-button {
+  height: 0;
+  width: 0;
+}
+
+.pickr .pcr-button::after {
+  height: 100%;
+  width: 100%;
+}
+
+.color-picker-custom-class {
+  font-size: 1.3rem;
+}
+
+.pcr-app .pcr-interaction .pcr-save {
+  background: var(--color-black);
+}
+
+.pcr-app .pcr-interaction .pcr-save:hover {
+  background: var(--color-darkgrey);
+}

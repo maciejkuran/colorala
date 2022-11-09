@@ -1,0 +1,138 @@
+//General styles for laptop design
+//
+@mixin flexCenter($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+////
+.wcp-simulator {
+  opacity: 0;
+  @include flexCenter(center, center);
+}
+
+.wcp-laptop-view-container {
+  display: none;
+  max-width: 120rem;
+  margin: 0 1rem;
+  border-radius: 12px;
+  border: 6px solid #f1f1f1;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  i {
+    pointer-events: all;
+  }
+}
+
+.browser-bar {
+  @include flexCenter(space-between, center);
+  background-color: #f1f1f1;
+  padding: 0.2rem;
+
+  input {
+    width: 90%;
+    background-color: var(--color-white);
+    margin-bottom: 0.2rem;
+  }
+}
+
+.dot {
+  height: 12px;
+  margin: 0 0.1rem;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.universal-theme--container {
+  position: relative;
+  overflow-y: scroll;
+  max-height: 73vh;
+
+  a:hover {
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 588.98px) {
+  .view-btn {
+    display: none;
+  }
+}
+
+//General styles for mobile design
+.wcp-mobile-view-container {
+  display: none;
+  cursor: pointer;
+  width: 330px;
+  height: 660px;
+  border: 13px solid black;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  i {
+    pointer-events: all;
+  }
+}
+
+.wcp-mobile-view-container:after {
+  content: '';
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-darkgrey);
+  border-radius: 10px;
+}
+
+.wcp-mobile-view-container:before {
+  content: '';
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-darkgrey);
+  border-radius: 50%;
+}
+
+.wcp-mobile-content {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.business-theme-mobile {
+  background-color: #e3e3e3;
+  padding: 0.5rem;
+}
+
+@media (max-width: 1366.98px) {
+  .wcp-mobile-view-container {
+    width: 280px;
+    height: 550px;
+  }
+}
+
+@media (max-width: 520.98px) {
+  .wcp-mobile-view-container {
+    margin-top: 1rem;
+  }
+}
+
+.view-active {
+  transform: translateX(0);
+  display: inline;
+}

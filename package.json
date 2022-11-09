@@ -2,14 +2,15 @@
   "name": "colorala",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "parcel index.html --port 1111",
-    "build": "parcel build index.html --dist-dir ./production"
+    "build": "parcel build index.html --no-scope-hoist --dist-dir ./production"
   },
   "author": "Maciej Kuran-Janowski",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/resolver-glob": "^2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0"
   }
 }
