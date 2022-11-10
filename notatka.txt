@@ -1,0 +1,3 @@
+Kontynuacja:
+
+- Copy to clipboard etc. inicjalizacja podstawowej funkcji w model.js

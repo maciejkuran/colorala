@@ -1,53 +1,50 @@
-4396
-76C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\TC.js133124010444871996 0
-57C:\Users\48798\Desktop\colorala\node_modules\import-fresh133124010439366549 1
-85C:\Users\48798\Desktop\colorala\node_modules\@parcel\core\test\RequestTracker.test.js133124010442314971 0
-35C:\Users\48798\Desktop\colorala\src133123792744146178 1
-43C:\Users\48798\Desktop\colorala\.prettierrc133124011834006324 0
-76C:\Users\48798\Desktop\colorala\node_modules\css-tree\lib\tokenizer\utils.js133124010442324944 0
-77C:\Users\48798\Desktop\colorala\node_modules\terser\lib\compress\inference.js133124010441101921 0
-78C:\Users\48798\Desktop\colorala\node_modules\css-tree\lib\syntax\node\Block.js133124010440034763 0
-59C:\Users\48798\Desktop\colorala\node_modules\yaml\types.mjs133124010441450977 0
-76C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\DK.js133124010443023076 0
+4399
 80C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\http3.js133124010443511773 0
 76C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\KR.js133124010443810970 0
 68C:\Users\48798\Desktop\colorala\node_modules\terser\lib\sourcemap.js133124010441480896 0
 64C:\Users\48798\Desktop\colorala\node_modules\color-name\index.js133124010438927721 0
 74C:\Users\48798\Desktop\colorala\node_modules\@parcel\packager-html\LICENSE133124010438778123 0
-44C:\Users\48798\Desktop\colorala\package.json133124023612879859 0
+44C:\Users\48798\Desktop\colorala\package.json133124869240076195 0
 79C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\opus.js133124010444259775 0
 78C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\let.js133124010443840889 0
 86C:\Users\48798\Desktop\colorala\node_modules\@parcel\core\src\requests\AssetRequest.js133124010440872522 0
 67C:\Users\48798\Desktop\colorala\node_modules\domelementtype\lib\esm133124010439954977 1
 114C:\Users\48798\Desktop\colorala\node_modules\@parcel\package-manager\test\fixtures\has-foo\subpackage\package.json133124010441211616 0
 79C:\Users\48798\Desktop\colorala\node_modules\type-fest\ts41\delimiter-case.d.ts133124010440144471 0
+42C:\Users\48798\Desktop\colorala\.gitignore133124865594171609 0
+76C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\AL.js133124010440343936 0
+108C:\Users\48798\Desktop\colorala\node_modules\@parcel\node-resolver-core\test\fixture\packages\source\dist.js133124010440752842 0
+61C:\Users\48798\Desktop\colorala\node_modules\svgo\lib\svgo.js133124010441806334 0
+74C:\Users\48798\Desktop\colorala\node_modules\@parcel\workers\lib\Handle.js133124010440343936 0
+53C:\Users\48798\Desktop\colorala\node_modules\mdn-data133124010440842605 1
 57C:\Users\48798\Desktop\colorala\node_modules\htmlnano\lib133124010440134496 1
 76C:\Users\48798\Desktop\colorala\node_modules\source-map-js\lib\quick-sort.js133124010439745536 0
 105C:\Users\48798\Desktop\colorala\node_modules\posthtml\node_modules\posthtml-parser\dist\chunk.2UQLUWPH.js133124010438997536 0
 79C:\Users\48798\Desktop\colorala\node_modules\svgo\plugins\convertShapeToPath.js133124010440603251 0
 92C:\Users\48798\Desktop\colorala\node_modules\css-select\lib\pseudo-selectors\subselects.d.ts133124010441022122 0
-36C:\Users\48798\Desktop\colorala\dist133124627758944490 1
+36C:\Users\48798\Desktop\colorala\dist133124869246455805 1
 101C:\Users\48798\Desktop\colorala\node_modules\@parcel\package-manager\test\fixtures\empty\package.json133124010441081964 0
 71C:\Users\48798\Desktop\colorala\node_modules\.bin\browserslist-lint.ps1133124010445480365 0
 80C:\Users\48798\Desktop\colorala\node_modules\htmlparser2\lib\WritableStream.d.ts133124010440463616 0
 55C:\Users\48798\Desktop\colorala\node_modules\is-extglob133124010439206976 1
-75C:\Users\48798\Desktop\colorala\node_modules\chokidar\lib\nodefs-handler.js133124010439615886 0
-59C:\Users\48798\Desktop\colorala\src\img\Colorala banner.jpg133070177211306889 0
-73C:\Users\48798\Desktop\colorala\node_modules\entities\lib\encode.d.ts.map133124010440513482 0
-122C:\Users\48798\Desktop\colorala\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-module\module.js133124010441580629 0
-75C:\Users\48798\Desktop\colorala\node_modules\css-select\lib\attributes.d.ts133124010440832631 0
-92C:\Users\48798\Desktop\colorala\node_modules\@parcel\transformer-posthtml\src\loadPlugins.js133124010439177057 0
-39C:\Users\48798\Desktop\colorala\src\img133124039348334540 1
+69C:\Users\48798\Desktop\colorala\node_modules\svgo\lib\svgo\plugins.js133124010441062017 0
+60C:\Users\48798\Desktop\colorala\color-palette-generator.html133124868905281766 0
+43C:\Users\48798\Desktop\colorala\.prettierrc133124011834006324 0
+76C:\Users\48798\Desktop\colorala\node_modules\css-tree\lib\tokenizer\utils.js133124010442324944 0
+77C:\Users\48798\Desktop\colorala\node_modules\terser\lib\compress\inference.js133124010441101921 0
+78C:\Users\48798\Desktop\colorala\node_modules\css-tree\lib\syntax\node\Block.js133124010440034763 0
+59C:\Users\48798\Desktop\colorala\node_modules\yaml\types.mjs133124010441450977 0
+76C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\DK.js133124010443023076 0
 89C:\Users\48798\Desktop\colorala\node_modules\@parcel\utils\test\input\sourcemap\inline.js133124010441281433 0
 65C:\Users\48798\Desktop\colorala\node_modules\svgo\lib\svgo\coa.js133124010440314018 0
-86C:\Users\48798\Desktop\colorala\src\js\views\web-components\popups\creatorPopupView.js133124627767265186 0
+86C:\Users\48798\Desktop\colorala\src\js\views\web-components\popups\creatorPopupView.js133124695818327814 0
 87C:\Users\48798\Desktop\colorala\node_modules\@parcel\runtime-react-refresh\package.json133124010439346604 0
 69C:\Users\48798\Desktop\colorala\node_modules\node-addon-api\README.md133124010440613215 0
 87C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\transforms3d.js133124010444981702 0
 91C:\Users\48798\Desktop\colorala\node_modules\css-tree\lib\syntax\pseudo\nth-last-of-type.js133124010441985849 0
 89C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\object-observe.js133124010444219880 0
 78C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\rem.js133124010444493005 0
-42C:\Users\48798\Desktop\colorala\index.html133124621538808321 0
+42C:\Users\48798\Desktop\colorala\index.html133124852228471636 0
 100C:\Users\48798\Desktop\colorala\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\lmdb.h133124010442135451 0
 40C:\Users\48798\Desktop\colorala\src\scss133123814811642935 1
 75C:\Users\48798\Desktop\colorala\node_modules\escape-string-regexp\readme.md133124010439256843 0
@@ -66,6 +63,17 @@
 66C:\Users\48798\Desktop\colorala\node_modules\lmdb\rollup.config.js133124010442354863 0
 58C:\Users\48798\Desktop\colorala\node_modules\yaml\index.js133124010440034763 0
 44C:\Users\48798\Desktop\colorala\node_modules133124013788698411 1
+76C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\TC.js133124010444871996 0
+57C:\Users\48798\Desktop\colorala\node_modules\import-fresh133124010439366549 1
+85C:\Users\48798\Desktop\colorala\node_modules\@parcel\core\test\RequestTracker.test.js133124010442314971 0
+35C:\Users\48798\Desktop\colorala\src133123792744146178 1
+75C:\Users\48798\Desktop\colorala\node_modules\chokidar\lib\nodefs-handler.js133124010439615886 0
+59C:\Users\48798\Desktop\colorala\src\img\Colorala banner.jpg133070177211306889 0
+73C:\Users\48798\Desktop\colorala\node_modules\entities\lib\encode.d.ts.map133124010440513482 0
+122C:\Users\48798\Desktop\colorala\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-module\module.js133124010441580629 0
+75C:\Users\48798\Desktop\colorala\node_modules\css-select\lib\attributes.d.ts133124010440832631 0
+92C:\Users\48798\Desktop\colorala\node_modules\@parcel\transformer-posthtml\src\loadPlugins.js133124010439177057 0
+39C:\Users\48798\Desktop\colorala\src\img133124039348334540 1
 91C:\Users\48798\Desktop\colorala\node_modules\.bin\node-gyp-build-optional-packages-optional133124010445460422 0
 82C:\Users\48798\Desktop\colorala\node_modules\svgo\plugins\removeEmptyContainers.js133124010441331297 0
 96C:\Users\48798\Desktop\colorala\node_modules\@babel\highlight\node_modules\ansi-styles\readme.md133124010439276791 0
@@ -132,7 +140,7 @@
 85C:\Users\48798\Desktop\colorala\node_modules\utility-types\dist\functional-helpers.js133124010439127190 0
 90C:\Users\48798\Desktop\colorala\node_modules\@parcel\optimizer-image\lib\ImageOptimizer.js133124010439007510 0
 67C:\Users\48798\Desktop\colorala\src\img\Colorala pdf export img.jpg133014295700000000 0
-59C:\Users\48798\Desktop\colorala\dist\index.b10d73a7.css.map133124601885854835 0
+59C:\Users\48798\Desktop\colorala\dist\index.b10d73a7.css.map133124869246306196 0
 95C:\Users\48798\Desktop\colorala\node_modules\@jridgewell\sourcemap-codec\src\sourcemap-codec.ts133124010440004844 0
 75C:\Users\48798\Desktop\colorala\node_modules\@parcel\core\src\Validation.js133124010442524409 0
 61C:\Users\48798\Desktop\colorala\src\scss\_desktop-styles.scss133123862741591220 0
@@ -163,10 +171,10 @@
 76C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\MT.js133124010444090227 0
 71C:\Users\48798\Desktop\colorala\node_modules\picomatch\lib\picomatch.js133124010439556046 0
 74C:\Users\48798\Desktop\colorala\node_modules\v8-compile-cache\CHANGELOG.md133124010439286763 0
-52C:\Users\48798\Desktop\colorala\src\js\controller.js133124619781455117 0
+52C:\Users\48798\Desktop\colorala\src\js\controller.js133124840927640114 0
 52C:\Users\48798\Desktop\colorala\node_modules\@parcel133124013776902182 1
 50C:\Users\48798\Desktop\colorala\node_modules\@lmdb133124013788698411 1
-47C:\Users\48798\Desktop\colorala\src\js\model.js133124083489479035 0
+47C:\Users\48798\Desktop\colorala\src\js\model.js133124733758136447 0
 44C:\Users\48798\Desktop\colorala\src\js\views133124604076970524 1
 68C:\Users\48798\Desktop\colorala\node_modules\@parcel\packager-js\src133124010440563349 1
 72C:\Users\48798\Desktop\colorala\node_modules\domutils\lib\traversal.d.ts133124010440742870 0
@@ -196,14 +204,14 @@
 76C:\Users\48798\Desktop\colorala\node_modules\@parcel\core\src\Environment.js133124010441670393 0
 100C:\Users\48798\Desktop\colorala\node_modules\htmlnano\docs\versioned_docs\version-1.1.1\020-usage.md133124010441470924 0
 67C:\Users\48798\Desktop\colorala\node_modules\normalize-path\LICENSE133124010439087297 0
-73C:\Users\48798\Desktop\colorala\src\js\views\web-components\navbarView.js133124117136976170 0
+73C:\Users\48798\Desktop\colorala\src\js\views\web-components\navbarView.js133124680171674250 0
 77C:\Users\48798\Desktop\colorala\node_modules\@parcel\packager-js\src\index.js133124010440294070 0
 74C:\Users\48798\Desktop\colorala\node_modules\posthtml-parser\dist\index.js133124010439127190 0
 76C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\AO.js133124010440792736 0
 85C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\word-break.js133124010445250981 0
 60C:\Users\48798\Desktop\colorala\src\img\colorala.com app.mp4133019521605720449 0
 72C:\Users\48798\Desktop\colorala\node_modules\css-select\lib\procedure.js133124010440004844 0
-66C:\Users\48798\Desktop\colorala\src\js\views\web-components\popups133123884227139338 1
+66C:\Users\48798\Desktop\colorala\src\js\views\web-components\popups133124707569176662 1
 56C:\Users\48798\Desktop\colorala\node_modules\.bin\terser133124010445460422 0
 67C:\Users\48798\Desktop\colorala\node_modules\to-regex-range\LICENSE133124010439067349 0
 62C:\Users\48798\Desktop\colorala\node_modules\sass\types\legacy133124010441856196 1
@@ -211,8 +219,8 @@
 62C:\Users\48798\Desktop\colorala\node_modules\dotenv-expand\lib133124010439575990 1
 89C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\pagevisibility.js133124010444289694 0
 86C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\input-event.js133124010443621485 0
-86C:\Users\48798\Desktop\colorala\src\js\views\web-components\popups\cookiesPopupView.js133124049769222436 0
-91C:\Users\48798\Desktop\colorala\src\js\views\web-components\popups\localStoragePopupView.js133124053147530544 0
+86C:\Users\48798\Desktop\colorala\src\js\views\web-components\popups\cookiesPopupView.js133124851315310834 0
+91C:\Users\48798\Desktop\colorala\src\js\views\web-components\popups\localStoragePopupView.js133124851569728539 0
 93C:\Users\48798\Desktop\colorala\node_modules\@parcel\core\lib\requests\WriteBundlesRequest.js133124010442564304 0
 55C:\Users\48798\Desktop\colorala\node_modules\domhandler133124010439745536 1
 52C:\Users\48798\Desktop\colorala\src\img\avatar me.ai133049730081714801 0
@@ -518,10 +526,6 @@
 62C:\Users\48798\Desktop\colorala\node_modules\lines-and-columns133124010439246871 1
 143C:\Users\48798\Desktop\colorala\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\side-effects-package-redirect-up\package.json133124010442225209 0
 49C:\Users\48798\Desktop\colorala\node_modules\lmdb133124010442454597 1
-108C:\Users\48798\Desktop\colorala\node_modules\@parcel\node-resolver-core\test\fixture\packages\source\dist.js133124010440752842 0
-61C:\Users\48798\Desktop\colorala\node_modules\svgo\lib\svgo.js133124010441806334 0
-74C:\Users\48798\Desktop\colorala\node_modules\@parcel\workers\lib\Handle.js133124010440343936 0
-53C:\Users\48798\Desktop\colorala\node_modules\mdn-data133124010440842605 1
 53C:\Users\48798\Desktop\colorala\node_modules\msgpackr133124010441121862 1
 59C:\Users\48798\Desktop\colorala\node_modules\node-addon-api133124010440593270 1
 69C:\Users\48798\Desktop\colorala\node_modules\postcss-value-parser\lib133124010439905110 1
@@ -804,7 +808,7 @@
 77C:\Users\48798\Desktop\colorala\node_modules\@parcel\core\test\Parcel.test.js133124010442105531 0
 69C:\Users\48798\Desktop\colorala\node_modules\weak-lru-cache\README.md133124010439865224 0
 100C:\Users\48798\Desktop\colorala\node_modules\@parcel\transformer-js\parcel-swc.linux-arm64-musl.node133124010443800995 0
-65C:\Users\48798\Desktop\colorala\dist\Colorala avatar.2b4343d1.png133124601885625450 0
+65C:\Users\48798\Desktop\colorala\dist\Colorala avatar.2b4343d1.png133124869246256328 0
 107C:\Users\48798\Desktop\colorala\node_modules\@parcel\source-map\parcel_sourcemap_wasm\dist-web\package.json133124010440633162 0
 64C:\Users\48798\Desktop\colorala\node_modules\yaml\browser\map.js133124010440184364 0
 59C:\Users\48798\Desktop\colorala\node_modules\.bin\acorn.cmd133124010445460422 0
@@ -1232,8 +1236,8 @@
 62C:\Users\48798\Desktop\colorala\node_modules\terser\lib\ast.js133124010439905110 0
 101C:\Users\48798\Desktop\colorala\node_modules\abortcontroller-polyfill\src\abortcontroller-polyfill.js133124010439376523 0
 92C:\Users\48798\Desktop\colorala\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\midl.c133124010441550710 0
-67C:\Users\48798\Desktop\colorala\node_modules\svgo\lib\svgo\tools.js133124010441816303 0
 62C:\Users\48798\Desktop\colorala\node_modules\terser\lib\cli.js133124010440663090 0
+67C:\Users\48798\Desktop\colorala\node_modules\svgo\lib\svgo\tools.js133124010441816303 0
 76C:\Users\48798\Desktop\colorala\node_modules\lmdb\dependencies\lz4\lib\lz4.h133124010442175344 0
 89C:\Users\48798\Desktop\colorala\node_modules\@parcel\utils\src\replaceBundleReferences.js133124010441590603 0
 91C:\Users\48798\Desktop\colorala\node_modules\@parcel\transformer-postcss\src\loadPlugins.js133124010439785429 0
@@ -1262,7 +1266,7 @@
 74C:\Users\48798\Desktop\colorala\node_modules\cosmiconfig\dist\index.js.map133124010440702976 0
 84C:\Users\48798\Desktop\colorala\node_modules\terser\lib\compress\compressor-flags.js133124010440732897 0
 79C:\Users\48798\Desktop\colorala\node_modules\mdn-data\css\selectors.schema.json133124010440643136 0
-70C:\Users\48798\Desktop\colorala\dist\live website preview.80df5301.gif133124601885555657 0
+70C:\Users\48798\Desktop\colorala\dist\live website preview.80df5301.gif133124869245977081 0
 71C:\Users\48798\Desktop\colorala\node_modules\nth-check\lib\compile.d.ts133124010440603251 0
 75C:\Users\48798\Desktop\colorala\node_modules\source-map-js\lib\array-set.js133124010438957650 0
 76C:\Users\48798\Desktop\colorala\node_modules\terser\lib\compress\evaluate.js133124010440922393 0
@@ -1288,9 +1292,6 @@
 66C:\Users\48798\Desktop\colorala\node_modules\terser\bin\terser.mjs133124010441640473 0
 75C:\Users\48798\Desktop\colorala\node_modules\nth-check\lib\esm\package.json133124010439845277 0
 72C:\Users\48798\Desktop\colorala\node_modules\ordered-binary\package.json133124010439805377 0
-70C:\Users\48798\Desktop\colorala\node_modules\svgo\dist\svgo.browser.js133124010441796357 0
-93C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\css-color-function.js133124010442394756 0
-100C:\Users\48798\Desktop\colorala\node_modules\@parcel\core\test\fixtures\targets-default-distdir-none133124010442703929 1
 87C:\Users\48798\Desktop\colorala\node_modules\@parcel\packager-js\src\ESMOutputFormat.js133124010439984898 0
 59C:\Users\48798\Desktop\colorala\node_modules\css-select\lib133124010441032097 1
 65C:\Users\48798\Desktop\colorala\node_modules\term-size\index.d.ts133124010440004844 0
@@ -1408,7 +1409,9 @@
 86C:\Users\48798\Desktop\colorala\node_modules\@parcel\optimizer-css\src\CSSOptimizer.js133124010439187036 0
 76C:\Users\48798\Desktop\colorala\node_modules\svgo\lib\svgo\css-class-list.js133124010440702976 0
 83C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\template.js133124010444891938 0
-69C:\Users\48798\Desktop\colorala\node_modules\svgo\lib\svgo\plugins.js133124010441062017 0
+70C:\Users\48798\Desktop\colorala\node_modules\svgo\dist\svgo.browser.js133124010441796357 0
+93C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\css-color-function.js133124010442394756 0
+100C:\Users\48798\Desktop\colorala\node_modules\@parcel\core\test\fixtures\targets-default-distdir-none133124010442703929 1
 70C:\Users\48798\Desktop\colorala\node_modules\supports-color\browser.js133124010438897801 0
 69C:\Users\48798\Desktop\colorala\node_modules\source-map\lib\base64.js133124010439765487 0
 67C:\Users\48798\Desktop\colorala\node_modules\supports-color\license133124010438718289 0
@@ -2336,7 +2339,7 @@
 83C:\Users\48798\Desktop\colorala\node_modules\css-tree\lib\syntax\node\StyleSheet.js133124010442255132 0
 81C:\Users\48798\Desktop\colorala\node_modules\@lmdb\lmdb-win32-x64\node.abi93.node133124010440812683 0
 85C:\Users\48798\Desktop\colorala\node_modules\@parcel\node-resolver-core\src\_empty.js133124010439147136 0
-78C:\Users\48798\Desktop\colorala\dist\Avatar Maciej Kuran-Janowski.4b128d61.png133124601885834884 0
+78C:\Users\48798\Desktop\colorala\dist\Avatar Maciej Kuran-Janowski.4b128d61.png133124869246435864 0
 83C:\Users\48798\Desktop\colorala\node_modules\entities\lib\decode_codepoint.d.ts.map133124010440284099 0
 96C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\extended-system-fonts.js133124010443182653 0
 74C:\Users\48798\Desktop\colorala\node_modules\entities\lib\encode-trie.d.ts133124010440742870 0
@@ -2455,8 +2458,8 @@
 84C:\Users\48798\Desktop\colorala\node_modules\@swc\helpers\src\_iterable_to_array.mjs133124010442374813 0
 89C:\Users\48798\Desktop\colorala\node_modules\dom-serializer\lib\esm\foreignNames.d.ts.map133124010439915084 0
 83C:\Users\48798\Desktop\colorala\node_modules\dom-serializer\lib\esm\foreignNames.js133124010439017482 0
-76C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\TM.js133124010444961751 0
 78C:\Users\48798\Desktop\colorala\node_modules\dom-serializer\lib\esm\index.d.ts133124010440304044 0
+76C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\TM.js133124010444961751 0
 76C:\Users\48798\Desktop\colorala\node_modules\dom-serializer\lib\esm\index.js133124010439446342 0
 78C:\Users\48798\Desktop\colorala\node_modules\@jridgewell\trace-mapping\LICENSE133124010438798075 0
 76C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\DE.js133124010442983186 0
@@ -2772,7 +2775,6 @@
 76C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\AD.js133124010439755510 0
 76C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\AE.js133124010439945004 0
 76C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\AI.js133124010440294070 0
-76C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\AL.js133124010440343936 0
 80C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\regions\alt-an.js133124010440433696 0
 85C:\Users\48798\Desktop\colorala\node_modules\@parcel\transformer-js\src\loadNative.js133124010439865224 0
 89C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\css-page-break.js133124010442733852 0
@@ -3046,7 +3048,7 @@
 82C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\css-has.js133124010442564304 0
 86C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\css-hyphens.js133124010442574276 0
 88C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\css-image-set.js133124010442584255 0
-47C:\Users\48798\Desktop\colorala\dist\index.html133124601886191127 0
+47C:\Users\48798\Desktop\colorala\dist\index.html133124869246455805 0
 94C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\css-in-out-of-range.js133124010442594223 0
 99C:\Users\48798\Desktop\colorala\node_modules\caniuse-lite\data\features\css-indeterminate-pseudo.js133124010442594223 0
 97C:\Users\48798\Desktop\colorala\node_modules\@parcel\package-manager\test\fixtures\packages\peers133124010441281433 1
@@ -4116,7 +4118,7 @@
 69C:\Users\48798\Desktop\colorala\node_modules\@parcel\fs\src\NodeFS.js133124010440014817 0
 72C:\Users\48798\Desktop\colorala\node_modules\@parcel\fs\src\OverlayFS.js133124010440074657 0
 70C:\Users\48798\Desktop\colorala\node_modules\@parcel\fs\lib\browser.js133124010439057375 0
-74C:\Users\48798\Desktop\colorala\dist\Generate colors colorala.9de4f18e.gif133124601885555657 0
+74C:\Users\48798\Desktop\colorala\dist\Generate colors colorala.9de4f18e.gif133124869245987055 0
 74C:\Users\48798\Desktop\colorala\node_modules\@parcel\fs\lib\browser.js.map133124010440284099 0
 87C:\Users\48798\Desktop\colorala\node_modules\.bin\node-gyp-build-optional-packages-test133124010445480365 0
 70C:\Users\48798\Desktop\colorala\node_modules\@parcel\fs\lib\types.d.ts133124010440533434 0
@@ -4389,9 +4391,10 @@
 54C:\Users\48798\Desktop\colorala\node_modules\.bin\svgo133124010445460422 0
 58C:\Users\48798\Desktop\colorala\node_modules\.bin\svgo.cmd133124010445460422 0
 60C:\Users\48798\Desktop\colorala\node_modules\.bin\terser.cmd133124010445460422 0
-63C:\Users\48798\Desktop\colorala\dist\Colorala logo.e3440ff1.png133124601885984496 0
-61C:\Users\48798\Desktop\colorala\dist\cookies img.541702f1.png133124601885824911 0
-55C:\Users\48798\Desktop\colorala\dist\index.b10d73a7.css133124601885824911 0
-54C:\Users\48798\Desktop\colorala\dist\index.e37f48ea.js133124627758924527 0
-58C:\Users\48798\Desktop\colorala\dist\index.e37f48ea.js.map133124627758944490 0
-82C:\Users\48798\Desktop\colorala\dist\pre-made color palettes colorala.8529b67d.jpg133124601885695271 0
+91C:\Users\48798\Desktop\colorala\dist\colorala how to save to palette animation.45805487.gif133124869246296227 0
+63C:\Users\48798\Desktop\colorala\dist\Colorala logo.e3440ff1.png133124869246276280 0
+61C:\Users\48798\Desktop\colorala\dist\cookies img.541702f1.png133124869246425887 0
+55C:\Users\48798\Desktop\colorala\dist\index.b10d73a7.css133124869246296227 0
+54C:\Users\48798\Desktop\colorala\dist\index.e37f48ea.js133124869246415904 0
+58C:\Users\48798\Desktop\colorala\dist\index.e37f48ea.js.map133124869246425887 0
+82C:\Users\48798\Desktop\colorala\dist\pre-made color palettes colorala.8529b67d.jpg133124869246445832 0

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Color Palette Generator - colorala</title>
+    <link rel="icon" type="image/x-icon" href="/src/img/Colorala avatar.png" />
+    <meta
+      name="description"
+      content="Press space to generate colors or use the button below.Create a beautiful color palette with colorala. "
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- --------- GOOGLE ANALYTICS ---------- -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-X147WWY90R"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-X147WWY90R');
+    </script>
+    <!-- //////////////
+    Scripts executed in order - async -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+      integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script defer type="module" src="/js/components.js"></script>
+    <script defer type="module" src="/js/media-queries.js"></script>
+    <script defer type="module" src="/js/color-picker.js"></script>
+    <script defer type="module" src="/js/main_1.js"></script>
+    <script defer type="module" src="/js/generate-pdf.js"></script>
+    <script defer type="module" src="/js/popups.js"></script> -->
+    <script defer type="module" src="/src/js/controller.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/scss/main.scss" />
+    <!-- ________________ -->
+  </head>
+  <body>
+    <div class="body-app-container">
+      <app-nav></app-nav>
+
+      <main class="main-app">
+        <header class="intro-app">
+          <h1>
+            👉Press <span class="highlight">space</span> to generate colors or
+            use the <span class="highlight">button</span> below
+          </h1>
+          <button class="primary-button generate-colors-btn">Generate</button>
+        </header>
+
+        <section>
+          <div class="colors-container">
+            <div class="color">
+              <div class="hex-code-copy-wrapper">
+                <p class="hex-label">#011627</p>
+                <button data-tooltip="Copy" class="copy-hex-btn action-button">
+                  <i class="fa-solid fa-copy copy-icon"></i>
+                </button>
+              </div>
+              <div class="action-buttons-wrapper">
+                <button
+                  data-tooltip="Add to Library"
+                  class="add-to-palette-btn action-button clr-picker-placement"
+                >
+                  <i class="fa-solid fa-heart heart off-pointer-event"></i>
+                </button>
+
+                <button
+                  data-tooltip="Lock/Unlock"
+                  class="lock-unlock-color-btn action-button"
+                >
+                  <i class="ri-lock-unlock-fill"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="color">
+              <div class="hex-code-copy-wrapper">
+                <p class="hex-label">#ff3366</p>
+                <button data-tooltip="Copy" class="copy-hex-btn action-button">
+                  <i class="fa-solid fa-copy copy-icon"></i>
+                </button>
+              </div>
+              <div class="action-buttons-wrapper">
+                <button
+                  data-tooltip="Add to Library"
+                  class="add-to-palette-btn action-button clr-picker-placement"
+                >
+                  <i class="fa-solid fa-heart heart off-pointer-event"></i>
+                </button>
+
+                <button
+                  data-tooltip="Lock/Unlock"
+                  class="lock-unlock-color-btn action-button"
+                >
+                  <i class="ri-lock-unlock-fill"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="color">
+              <div class="hex-code-copy-wrapper">
+                <p class="hex-label">#70ffb8</p>
+                <button data-tooltip="Copy" class="copy-hex-btn action-button">
+                  <i class="fa-solid fa-copy copy-icon"></i>
+                </button>
+              </div>
+              <div class="action-buttons-wrapper">
+                <button
+                  data-tooltip="Add to Library"
+                  class="add-to-palette-btn action-button clr-picker-placement"
+                >
+                  <i class="fa-solid fa-heart heart off-pointer-event"></i>
+                </button>
+
+                <button
+                  data-tooltip="Lock/Unlock"
+                  class="lock-unlock-color-btn action-button"
+                >
+                  <i class="ri-lock-unlock-fill"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="color">
+              <div class="hex-code-copy-wrapper">
+                <p class="hex-label">#e2fbfc</p>
+                <button data-tooltip="Copy" class="copy-hex-btn action-button">
+                  <i class="fa-solid fa-copy copy-icon"></i>
+                </button>
+              </div>
+              <div class="action-buttons-wrapper">
+                <button
+                  data-tooltip="Add to Library"
+                  class="add-to-palette-btn action-button clr-picker-placement"
+                >
+                  <i class="fa-solid fa-heart heart off-pointer-event"></i>
+                </button>
+
+                <button
+                  data-tooltip="Lock/Unlock"
+                  class="lock-unlock-color-btn action-button"
+                >
+                  <i class="ri-lock-unlock-fill"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Displaying tooltips -->
+    <div class="div-tooltip"></div>
+
+    <p class="added-to-palette-confirmation-label">Added ❤</p>
+    <p class="added-to-palette-error-label">❌ Already Added</p>
+    <p class="copied-to-clipboard-label">🟢 Copied</p>
+
+    <from-creator-popup></from-creator-popup>
+
+    <a class="from-creator-btn from-creator-btn-app-page" href=""
+      >From Creator 😀</a
+    >
+    <div class="overlay-modal hide"></div>
+    <div class="overlay-modal-cookies hide"></div>
+    <cookies-popup></cookies-popup>
+    <about-local-storage-popup></about-local-storage-popup>
+  </body>
+</html>

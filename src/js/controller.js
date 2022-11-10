@@ -1,11 +1,14 @@
-//Imports
+//Importing views
 import navbarView from './views/web-components/navbarView.js';
 import footerView from './views/web-components/footerView.js';
 import cookiesPopupView from './views/web-components/popups/cookiesPopupView.js';
 import creatorPopupView from './views/web-components/popups/creatorPopupView.js';
 import localStoragePopupView from './views/web-components/popups/localStoragePopupView.js';
-
 import homePageView from './views/homePageView.js';
+import colorGeneratorView from './views/colorGeneratorView.js';
+import View from './views/View.js';
+
+//Importing model
 import * as model from './model.js';
 
 //Controlling aplication navigation/NAVBAR
@@ -29,15 +32,29 @@ const controlPopups = () => {
   creatorPopupView.addHandler();
 
   cookiesPopupView.addHandler(
-    model.state.locStorageCookies,
-    model.state.locStorageCookiesState,
-    model.state.locStorageWelcomeMsg
+    model.data.locStorageCookies,
+    model.data.locStorageCookiesState,
+    model.data.locStorageWelcomeMsg
   );
   localStoragePopupView.addHandler(
-    model.state.locStorageCookies,
-    model.state.locStorageWelcomeMsg,
-    model.state.locStorageWelcomeMsgState
+    model.data.locStorageCookies,
+    model.data.locStorageWelcomeMsg,
+    model.data.locStorageWelcomeMsgState
   );
 };
 
 controlPopups();
+
+//Color generator control
+const controlColorGenerator = () => {
+  colorGeneratorView.addHandler(model.RGBtoHEX, model.copyToClipboard);
+};
+
+controlColorGenerator();
+
+//Initialize globally tooltip functionality
+const controlTooltip = () => {
+  const view = new View();
+  view.initTooltip();
+};
+controlTooltip();

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel index.html --port 1111",
-    "build": "parcel build index.html --no-scope-hoist --dist-dir ./production"
+    "start": "parcel ./*.html --port 1111",
+    "build": "parcel build ./*.html --dist-dir ./production"
   },
   "author": "Maciej Kuran-Janowski",
   "license": "ISC",
