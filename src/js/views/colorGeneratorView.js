@@ -9,9 +9,9 @@ class ColorGeneratorView extends View {
   #copyHEXbtns = document.querySelectorAll('.copy-hex-btn');
   #addToPaletteBtns = document.querySelectorAll('.add-to-palette-btn');
   #copiedLabel = document.querySelector('.copied-to-clipboard-label');
-  #holder;
+  #holdGeneratedColors;
 
-  addHandler(RGBtoHEX, copyToClipboard) {
+  addHandler(RGBtoHEX, copyToClipboard, saveToLocalStorage, locStoragePalette) {
     //Generating colors on btns click
     this.#generateColorsBtn.forEach(btn =>
       btn.addEventListener('click', () => this.#generateColors(RGBtoHEX))
@@ -45,17 +45,27 @@ class ColorGeneratorView extends View {
         this.#copyHEXFromGenerated(e, copyToClipboard)
       )
     );
+    //Add color to palette
+    this.#addToPaletteBtns.forEach(btn => {
+      btn.addEventListener('click', e => {
+        let HEX =
+          e.target.parentElement.previousElementSibling.children[0].textContent;
+        this.validateColor(HEX, saveToLocalStorage, locStoragePalette);
+        this.renderColorsCounter();
+        this.copyHEXFromPalette(copyToClipboard);
+      });
+    });
   }
 
   #generateColors(RGBtoHEX) {
     this.#colorAreas.forEach((area, i) => {
       if (!this.#colorAreas[i].classList.contains('locked')) {
-        this.#holder = RGBtoHEX();
+        this.#holdGeneratedColors = RGBtoHEX();
 
-        area.style.backgroundColor = this.#holder;
-        this.#hexLabels[i].textContent = this.#holder;
+        area.style.backgroundColor = this.#holdGeneratedColors;
+        this.#hexLabels[i].textContent = this.#holdGeneratedColors;
       } else {
-        this.#holder = ' ';
+        this.#holdGeneratedColors = ' ';
         area.style.backgroundColor = ' ';
       }
     });
@@ -82,6 +92,23 @@ class ColorGeneratorView extends View {
 
     copyToClipboard(hex);
     this.displayStatus(this.#copiedLabel, 'copied-to-clipboard-label-active');
+  }
+
+  copyHEXFromPalette(copyToClipboard) {
+    const copyHEXMyPaletteBtns = document.querySelectorAll(
+      '.copy-hex-my-palette-btn'
+    );
+
+    copyHEXMyPaletteBtns.forEach(btn =>
+      btn.addEventListener('click', e => {
+        let hex = e.target.previousElementSibling.textContent;
+        copyToClipboard(hex);
+        this.displayStatus(
+          this.#copiedLabel,
+          'copied-to-clipboard-label-active'
+        );
+      })
+    );
   }
 }
 

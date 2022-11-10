@@ -5,19 +5,11 @@ export const data = {
   //Welcome msg display is stored in local storage
   locStorageWelcomeMsg: 'colorala-welcome-message',
   locStorageWelcomeMsgState: 'read',
-  //User colors
-  myPalette: [],
-  // Get colors from local storage
-  getColors() {
-    return localStorage.getItem('myPalette');
-  },
-  //Saving colors to local storage
-  saveColors() {
-    return localStorage.setItem('myPalette', JSON.stringify(this.myPalette));
-  },
+  //Read colors from local storage
+  locStoragePalette: 'myPalette',
 };
 
-//Retreiving random colors
+//RETREIVING RANDOM COLORS
 //generating random number
 export const randomNb = (min, max) => {
   return Math.trunc(Math.random() * (max - min + 1) + min);
@@ -47,4 +39,29 @@ export const copyToClipboard = text => {
   if (navigator.clipboard) {
     return navigator.clipboard.writeText(text);
   }
+};
+
+//Save colors to local storage
+export const saveToLocalStorage = color => {
+  let colors;
+  if (localStorage.getItem(data.locStoragePalette) === null) {
+    colors = [];
+  } else {
+    colors = JSON.parse(localStorage.getItem(data.locStoragePalette));
+  }
+
+  colors.push(color);
+  localStorage.setItem(data.locStoragePalette, JSON.stringify(colors));
+};
+
+//Getting data from local storage - returns array of hex
+export const getDataLocalStorage = () => {
+  let colors;
+  if (localStorage.getItem(data.locStoragePalette) === null) {
+    colors = [];
+  } else {
+    colors = JSON.parse(localStorage.getItem(data.locStoragePalette));
+  }
+
+  return colors;
 };

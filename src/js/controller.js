@@ -7,6 +7,7 @@ import localStoragePopupView from './views/web-components/popups/localStoragePop
 import homePageView from './views/homePageView.js';
 import colorGeneratorView from './views/colorGeneratorView.js';
 import View from './views/View.js';
+const view = new View();
 
 //Importing model
 import * as model from './model.js';
@@ -42,19 +43,35 @@ const controlPopups = () => {
     model.data.locStorageWelcomeMsgState
   );
 };
-
 controlPopups();
 
 //Color generator control
 const controlColorGenerator = () => {
-  colorGeneratorView.addHandler(model.RGBtoHEX, model.copyToClipboard);
+  colorGeneratorView.addHandler(
+    model.RGBtoHEX,
+    model.copyToClipboard,
+    model.saveToLocalStorage,
+    model.data.locStoragePalette
+  );
 };
-
 controlColorGenerator();
+
+//Load data from local storage when DOM loads
+const controlLoadData = () => {
+  const colors = model.getDataLocalStorage();
+  colors.forEach(color => {
+    //render clrs in palette
+    view.renderAddedColorInPalette(color);
+    //render clrs count
+    view.renderColorsCounter();
+  });
+  //init copy functionality from palette
+  colorGeneratorView.copyHEXFromPalette(model.copyToClipboard);
+};
+controlLoadData();
 
 //Initialize globally tooltip functionality
 const controlTooltip = () => {
-  const view = new View();
   view.initTooltip();
 };
 controlTooltip();
