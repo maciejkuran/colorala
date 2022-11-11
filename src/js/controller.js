@@ -103,3 +103,12 @@ const controlTooltip = () => {
   view.initTooltip();
 };
 controlTooltip();
+
+// Initialize PDF generation
+// const initPDFGen = () => {
+//   view.generatePDF(model.generatePDF);
+// };
+
+// initPDFGen();
+
+view.generatePDF(model.generatePDF);

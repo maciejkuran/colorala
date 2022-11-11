@@ -10,6 +10,7 @@ export default class View {
   #addedErrorLabel = document.querySelector('.added-to-palette-error-label');
   #myPaletteContainer = document.querySelector('.my-palette');
   #pickerPlacementsHTML = document.querySelectorAll('.clr-picker-placement');
+  #exportBtn = document.querySelector('.export-btn');
   #timeoutHolder;
 
   addHandler(handler) {
@@ -197,6 +198,13 @@ export default class View {
     pickrs.forEach(div => {
       div.classList.add('action-button');
       div.setAttribute('data-tooltip', 'Color Picker');
+    });
+  }
+
+  generatePDF(generatePDF) {
+    this.#exportBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      generatePDF(this.#myPalette);
     });
   }
 }
