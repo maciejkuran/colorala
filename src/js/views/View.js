@@ -1,7 +1,7 @@
 export default class View {
   // #actionBtns = document.querySelectorAll('.action-button');
   #divTooltip = document.querySelector('.div-tooltip');
-  #mediaQueryMobile = window.matchMedia('(max-width: 700px)');
+  mediaQueryMobile = window.matchMedia('(max-width: 700px)');
   #myPalette = document.querySelector('.colors-container-my-palette');
   #colorCounterLabel = document.querySelector('.my-palette-label-counter');
   #addedSuccessLabel = document.querySelector(
@@ -39,7 +39,7 @@ export default class View {
     let targetLeft = target.getBoundingClientRect().left + 30 + 'px';
 
     this.#timeoutHolder = setTimeout(() => {
-      if (!this.#mediaQueryMobile.matches && this.#divTooltip) {
+      if (!this.mediaQueryMobile.matches && this.#divTooltip) {
         this.#divTooltip.textContent = targetAttr;
         this.#divTooltip.style.top = targetTop;
         this.#divTooltip.style.left = targetLeft;

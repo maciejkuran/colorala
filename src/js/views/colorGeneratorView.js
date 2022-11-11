@@ -9,6 +9,9 @@ class ColorGeneratorView extends View {
   #copyHEXbtns = document.querySelectorAll('.copy-hex-btn');
   #addToPaletteBtns = document.querySelectorAll('.add-to-palette-btn');
   #copiedLabel = document.querySelector('.copied-to-clipboard-label');
+  #mainTag = document.querySelector('.main-app');
+  #introAppDesktop = document.querySelector('.intro-app');
+
   #holdGeneratedColors;
 
   addHandler(RGBtoHEX, copyToClipboard, saveToLocalStorage, locStoragePalette) {
@@ -33,6 +36,10 @@ class ColorGeneratorView extends View {
         this.#generateColors(RGBtoHEX);
       }
     });
+
+    //Switching intro div section based on device viewport
+    document.addEventListener('DOMContentLoaded', () => this.switchIntroDiv());
+    window.addEventListener('resize', () => this.switchIntroDiv());
 
     //Locking/unlocking color
     this.#lockUnlockColorBtns.forEach(btn =>
@@ -112,7 +119,7 @@ class ColorGeneratorView extends View {
       })
     );
   }
-
+  //render color from color picker library
   renderColorFromPicker() {
     const saveBtns = document.querySelectorAll('.pcr-save');
 
@@ -134,6 +141,29 @@ class ColorGeneratorView extends View {
     };
 
     saveBtns.forEach(btn => btn.addEventListener('click', init));
+  }
+
+  //There's a special view for mobile
+  addIntroDivMobile() {
+    const markup = `<div class="intro-app-mobile">
+    <h1>👉Push the <span class="highlight">button</span> to start!</h1>
+    <button class="primary-button generate-colors-btn">Generate</button>
+  </div>`;
+
+    if (this.#mainTag) this.#mainTag.insertAdjacentHTML('afterbegin', markup);
+  }
+
+  //Switching view if viewport width < 700 px
+  switchIntroDiv() {
+    const introAppMobile = document.querySelector('.intro-app-mobile');
+
+    if (this.mediaQueryMobile.matches) {
+      this.#introAppDesktop.style.display = 'none';
+      introAppMobile.style.display = 'flex';
+    } else {
+      this.#introAppDesktop.style.display = 'flex';
+      introAppMobile.style.display = 'none';
+    }
   }
 }
 

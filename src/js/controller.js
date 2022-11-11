@@ -53,6 +53,7 @@ const controlColorGenerator = () => {
     model.saveToLocalStorage,
     model.data.locStoragePalette
   );
+  colorGeneratorView.addIntroDivMobile();
 };
 controlColorGenerator();
 
@@ -105,10 +106,8 @@ const controlTooltip = () => {
 controlTooltip();
 
 // Initialize PDF generation
-// const initPDFGen = () => {
-//   view.generatePDF(model.generatePDF);
-// };
+const initPDFGen = () => {
+  view.generatePDF(model.generatePDF);
+};
 
-// initPDFGen();
-
-view.generatePDF(model.generatePDF);
+initPDFGen();
