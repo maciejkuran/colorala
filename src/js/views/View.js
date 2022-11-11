@@ -134,4 +134,15 @@ export default class View {
         'added-to-palette-error-label-active'
       );
   }
+
+  highlightHeart(el) {
+    setTimeout(() => {
+      el.classList.add('heart-highlight');
+      setTimeout(() => {
+        document
+          .querySelectorAll('.heart')
+          .forEach(heart => heart.classList.remove('heart-highlight'));
+      }, 1000);
+    }, 100);
+  }
 }

@@ -50,6 +50,8 @@ class ColorGeneratorView extends View {
       btn.addEventListener('click', e => {
         let HEX =
           e.target.parentElement.previousElementSibling.children[0].textContent;
+        let heartIcon = Array.from(e.target.children)[0];
+        this.highlightHeart(heartIcon);
         this.validateColor(HEX, saveToLocalStorage, locStoragePalette);
         this.renderColorsCounter();
         this.copyHEXFromPalette(copyToClipboard);
