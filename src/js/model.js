@@ -1,11 +1,11 @@
 export const data = {
-  //Cookies accept is saved in the local storage
+  //Cookies accept name in local storage
   locStorageCookies: 'colorala-cookies-accepted',
   locStorageCookiesState: true,
-  //Welcome msg display is stored in local storage
+  //Welcome msg popup name in local storage
   locStorageWelcomeMsg: 'colorala-welcome-message',
   locStorageWelcomeMsgState: 'read',
-  //Read colors from local storage
+  //My palette name in local storage
   locStoragePalette: 'myPalette',
 };
 
@@ -64,4 +64,13 @@ export const getDataLocalStorage = () => {
   }
 
   return colors;
+};
+
+//Removing from local storage
+export const removeColorLocalStorage = container => {
+  let colors = getDataLocalStorage();
+
+  const containerIndex = container.children[1].children[0].textContent;
+  colors.splice(colors.indexOf(containerIndex), 1);
+  localStorage.setItem('myPalette', JSON.stringify(colors));
 };

@@ -45,7 +45,7 @@ const controlPopups = () => {
 };
 controlPopups();
 
-//Color generator control
+//Controlling color generator
 const controlColorGenerator = () => {
   colorGeneratorView.addHandler(
     model.RGBtoHEX,
@@ -69,6 +69,34 @@ const controlLoadData = () => {
   colorGeneratorView.copyHEXFromPalette(model.copyToClipboard);
 };
 controlLoadData();
+
+//Control removing colors from palette
+const controlRemoveColorPalette = e => {
+  e.stopPropagation();
+  const btn = e.target;
+  const container = btn.parentElement;
+
+  if (btn.className === 'remove-color-my-palette-btn') {
+    //This function updates 'colors in library setting' - WCP
+    // updateWCPLibraries(btn);
+    ////////////////
+    container.remove();
+    model.removeColorLocalStorage(container);
+  }
+  view.renderColorsCounter();
+  //WCP - Website Color Preview
+  // informIfNoColors(getColors());
+};
+
+view.addHandler(controlRemoveColorPalette);
+
+//Init color picker
+const initPicker = () => {
+  view.renderPickers();
+  view.pickerAttributes();
+  colorGeneratorView.renderColorFromPicker();
+};
+initPicker();
 
 //Initialize globally tooltip functionality
 const controlTooltip = () => {

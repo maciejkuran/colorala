@@ -112,6 +112,29 @@ class ColorGeneratorView extends View {
       })
     );
   }
+
+  renderColorFromPicker() {
+    const saveBtns = document.querySelectorAll('.pcr-save');
+
+    const init = e => {
+      let target = e.target;
+      let hex = target.parentElement.children[0].value;
+      let clickedIndex = [...saveBtns].map(btn =>
+        [...saveBtns].indexOf(target)
+      )[0];
+
+      if (!this.#colorAreas[clickedIndex]) return;
+
+      if (!this.#colorAreas[clickedIndex].classList.contains('locked')) {
+        this.#colorAreas[clickedIndex].style.backgroundColor = hex;
+        this.#hexLabels[clickedIndex].textContent = hex;
+      } else {
+        this.#colorAreas[clickedIndex].style.backgroundColor = ' ';
+      }
+    };
+
+    saveBtns.forEach(btn => btn.addEventListener('click', init));
+  }
 }
 
 export default new ColorGeneratorView();
