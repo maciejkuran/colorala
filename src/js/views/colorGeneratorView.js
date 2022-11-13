@@ -8,7 +8,6 @@ class ColorGeneratorView extends View {
   #lockUnlockColorBtns = document.querySelectorAll('.lock-unlock-color-btn');
   #copyHEXbtns = document.querySelectorAll('.copy-hex-btn');
   #addToPaletteBtns = document.querySelectorAll('.add-to-palette-btn');
-  #copiedLabel = document.querySelector('.copied-to-clipboard-label');
   #mainTag = document.querySelector('.main-app');
   #introAppDesktop = document.querySelector('.intro-app');
 
@@ -100,25 +99,9 @@ class ColorGeneratorView extends View {
     let hex = target.previousElementSibling.textContent;
 
     copyToClipboard(hex);
-    this.displayStatus(this.#copiedLabel, 'copied-to-clipboard-label-active');
+    this.displayStatus(this.copiedLabel, 'copied-to-clipboard-label-active');
   }
 
-  copyHEXFromPalette(copyToClipboard) {
-    const copyHEXMyPaletteBtns = document.querySelectorAll(
-      '.copy-hex-my-palette-btn'
-    );
-
-    copyHEXMyPaletteBtns.forEach(btn =>
-      btn.addEventListener('click', e => {
-        let hex = e.target.previousElementSibling.textContent;
-        copyToClipboard(hex);
-        this.displayStatus(
-          this.#copiedLabel,
-          'copied-to-clipboard-label-active'
-        );
-      })
-    );
-  }
   //render color from color picker library
   renderColorFromPicker() {
     const saveBtns = document.querySelectorAll('.pcr-save');
@@ -156,6 +139,8 @@ class ColorGeneratorView extends View {
   //Switching view if viewport width < 700 px
   switchIntroDiv() {
     const introAppMobile = document.querySelector('.intro-app-mobile');
+
+    if (!introAppMobile || !this.#introAppDesktop) return;
 
     if (this.mediaQueryMobile.matches) {
       this.#introAppDesktop.style.display = 'none';

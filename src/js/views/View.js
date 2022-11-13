@@ -9,6 +9,7 @@ export default class View {
   );
   #addedErrorLabel = document.querySelector('.added-to-palette-error-label');
   #myPaletteContainer = document.querySelector('.my-palette');
+  copiedLabel = document.querySelector('.copied-to-clipboard-label');
   #pickerPlacementsHTML = document.querySelectorAll('.clr-picker-placement');
   #exportBtn = document.querySelector('.export-btn');
   #timeoutHolder;
@@ -154,6 +155,25 @@ export default class View {
       }, 1000);
     }, 100);
   }
+
+  //Copy hex from my palette
+  copyHEXFromPalette(copyToClipboard) {
+    const copyHEXMyPaletteBtns = document.querySelectorAll(
+      '.copy-hex-my-palette-btn'
+    );
+
+    copyHEXMyPaletteBtns.forEach(btn =>
+      btn.addEventListener('click', e => {
+        let hex = e.target.previousElementSibling.textContent;
+        copyToClipboard(hex);
+        this.displayStatus(
+          this.copiedLabel,
+          'copied-to-clipboard-label-active'
+        );
+      })
+    );
+  }
+
   //render color pickers
   renderPickers() {
     if (!this.#pickerPlacementsHTML) return;
