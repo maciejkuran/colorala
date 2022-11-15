@@ -111,13 +111,13 @@ export default class View {
     const value = this.#paletteColorsCounter();
 
     if (value === 0)
-      this.#colorCounterLabel.textContent = `${value} colors in your library! 😌`;
+      this.#colorCounterLabel.textContent = `${value} colors in your palette! 😌`;
 
     if (value === 1)
-      this.#colorCounterLabel.textContent = `${value} color in your library! 😀`;
+      this.#colorCounterLabel.textContent = `${value} color in your palette! 😀`;
 
     if (value > 1)
-      this.#colorCounterLabel.textContent = `${value} colors in your library! 😀`;
+      this.#colorCounterLabel.textContent = `${value} colors in your palette! 😀`;
   }
 
   // Color validation, if color exists in palette, display error label, if not, add to palette

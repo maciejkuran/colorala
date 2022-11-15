@@ -127,14 +127,14 @@ class AppNav extends HTMLElement {
         <div class="my-palette hide">
           <div class="flex-my-palette">
             <button class="export-btn">
-              <i class="fa-solid fa-file-export export-icon"></i>Export library
+              <i class="fa-solid fa-file-export export-icon"></i>Export palette
               to PDF
             </button>
             <button class="close close-my-palette-btn">
               <i class="fa-solid fa-circle-xmark"></i>
             </button>
           </div>
-          <p class="my-palette-label-counter">0 colors in your library! 😌</p>
+          <p class="my-palette-label-counter">0 colors in your palette! 😌</p>
           <div class="colors-container-my-palette"></div>
         </div>
       </div>

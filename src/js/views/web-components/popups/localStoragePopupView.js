@@ -59,12 +59,12 @@ class LocalStoragePopup extends HTMLElement {
       />
       <p>
         When creating your color palette, save the colors in
-        <b>'My Palette'</b>. All colors are
+        <b>your palette</b> ❤. All colors are
         <strong>saved in your browser's local storage</strong>. Unless you
         delete the data from your browser, the
-        <b> added colors will NOT disappear! </b> 🟢
+        added colors will NOT disappear! Export your palette to <b>PDF format</b> at any time.
       </p>
-      <p>Export your palette to <b>PDF format</b> at any time.</p>
+      
     </div>`;
   }
 }
