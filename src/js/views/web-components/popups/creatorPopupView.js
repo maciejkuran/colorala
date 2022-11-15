@@ -22,12 +22,12 @@ class FromCreatorPopup extends HTMLElement {
 
   #displayFromCreatorContent(e) {
     e.preventDefault();
-    this.#fromCreatorContent.classList.remove('hide');
+    this.#fromCreatorContent?.classList.remove('hide');
     this.#backgroundOverlay.classList.remove('hide');
   }
 
   #closeFromCreatorContent(classname) {
-    this.#fromCreatorContent.classList.add(classname);
+    this.#fromCreatorContent?.classList.add(classname);
     this.#backgroundOverlay.classList.add(classname);
   }
 
