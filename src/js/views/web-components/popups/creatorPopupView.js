@@ -11,11 +11,11 @@ class FromCreatorPopup extends HTMLElement {
       this.#displayFromCreatorContent(e)
     );
 
-    this.#fromCreatorCloseBtn.addEventListener('click', () =>
+    this.#fromCreatorCloseBtn?.addEventListener('click', () =>
       this.#closeFromCreatorContent('hide')
     );
 
-    this.#backgroundOverlay.addEventListener('click', () =>
+    this.#backgroundOverlay?.addEventListener('click', () =>
       this.#closeFromCreatorContent('hide')
     );
   }

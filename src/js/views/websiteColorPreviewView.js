@@ -73,10 +73,10 @@ class WebsiteColorPreviewView extends View {
     //Closing popup setting container on close btn click & manual settings hamburger btn click
     const closeBtns = document.querySelectorAll('.close-setting-popup-btn');
     closeBtns.forEach(btn =>
-      btn.addEventListener('click', e => this.#closePopupSetting(e))
+      btn?.addEventListener('click', e => this.#closePopupSetting(e))
     );
 
-    this.#hamburgerBtn.addEventListener('click', e =>
+    this.#hamburgerBtn?.addEventListener('click', e =>
       this.#closePopupSetting(e)
     );
 

@@ -11,18 +11,18 @@ class CookiesPopup extends HTMLElement {
       this.#showCookies(name)
     );
 
-    this.#cookiesAcceptBtn.addEventListener('click', () => {
+    this.#cookiesAcceptBtn?.addEventListener('click', () => {
       this.#acceptCookies(name, state, locStorageWelcomeMsg);
     });
   }
 
   #showCookies(name) {
     if (!localStorage.getItem(name)) {
-      this.#cookiesContainer.classList.remove('hide');
-      this.#overlayCookies.classList.remove('hide');
+      this.#cookiesContainer?.classList.remove('hide');
+      this.#overlayCookies?.classList.remove('hide');
     } else {
-      this.#cookiesContainer.classList.add('hide');
-      this.#overlayCookies.classList.add('hide');
+      this.#cookiesContainer?.classList.add('hide');
+      this.#overlayCookies?.classList.add('hide');
     }
   }
 
