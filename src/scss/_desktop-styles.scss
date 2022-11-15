@@ -1174,3 +1174,15 @@ footer {
     text-align: center;
   }
 }
+
+.sitemap-container {
+  margin-top: 2rem;
+  div {
+    @include flexCenter(center, center);
+    flex-direction: column;
+
+    h1 {
+      margin-bottom: 3rem;
+    }
+  }
+}

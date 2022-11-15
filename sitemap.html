@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>colorala - PAGE NOT FOUND!</title>
+    <title>colorala - Sitemap</title>
     <link rel="icon" type="image/x-icon" href="/src/img/Colorala avatar.png" />
-    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="The sitemap presents all internal links of the colorala application"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,11 +20,26 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- --------- GOOGLE ANALYTICS ---------- -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-X147WWY90R"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-X147WWY90R');
+    </script>
+    <!-- ////////////////////// -->
     <script
       defer
       src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
@@ -44,7 +62,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
     <script defer type="module" src="/src/js/controller.js"></script>
 
     <!--/////////////////// -->
@@ -53,14 +70,24 @@
   <body>
     <app-nav></app-nav>
 
-    <main class="page-not-found-content">
-      <h1>404! <br />PAGE NOT FOUND 😥</h1>
-      <p>
-        Use <span class="highlight">navigation</span> to find what your
-        interested 😉!
-      </p>
+    <main class="sitemap-container">
+      <div>
+        <h1>Sitemap 📋</h1>
+        <ul>
+          <li><a href="/">🟢 Home</a></li>
+          <li>
+            <a href="/color-palette-generator">🟢 Color Palette Generator!</a>
+          </li>
+          <li>
+            <a href="/pre-made-color-palettes">🟢 Pre-made Color Palettes!</a>
+          </li>
+          <li>
+            <a href="/website-color-preview">🟢 Website Color Preview!</a>
+          </li>
+          <li><a href="/privacy-policy">🟢 Privacy Policy</a></li>
+        </ul>
+      </div>
     </main>
-
     <div class="overlay-modal hide"></div>
   </body>
 </html>
