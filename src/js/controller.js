@@ -6,6 +6,14 @@ import creatorPopupView from './views/web-components/popups/creatorPopupView.js'
 import localStoragePopupView from './views/web-components/popups/localStoragePopupView.js';
 import homePageView from './views/homePageView.js';
 import colorGeneratorView from './views/colorGeneratorView.js';
+import preMadePalettesView from './views/preMadePalettesView.js';
+import websiteColorPreviewView from './views/websiteColorPreviewView.js';
+
+//importing business theme
+import businessThemeLaptop from './website-color-preview/themes/business-theme/laptop.js';
+import businessThemeMobile from './website-color-preview/themes/business-theme/mobile.js';
+//________________
+
 import View from './views/View.js';
 const view = new View();
 
@@ -67,7 +75,7 @@ const controlLoadData = () => {
     view.renderColorsCounter();
   });
   //init copy functionality from palette
-  colorGeneratorView.copyHEXFromPalette(model.copyToClipboard);
+  view.copyHEXFromPalette(model.copyToClipboard);
 };
 controlLoadData();
 
@@ -78,32 +86,62 @@ const controlRemoveColorPalette = e => {
   const container = btn.parentElement;
 
   if (btn.className === 'remove-color-my-palette-btn') {
-    //This function updates 'colors in library setting' - WCP
-    // updateWCPLibraries(btn);
-    ////////////////
+    //This function updates 'wcp palette colors'
+    websiteColorPreviewView.updatePaletteColors(btn);
     container.remove();
     model.removeColorLocalStorage(container);
   }
   view.renderColorsCounter();
-  //WCP - Website Color Preview
-  // informIfNoColors(getColors());
 };
 
 view.addHandler(controlRemoveColorPalette);
+
+//Control Pre-made Palettes
+const preMadePalettes = () => {
+  preMadePalettesView.renderPalettes(model.data.preMadePalettes);
+  preMadePalettesView.addHandler(
+    model.saveToLocalStorage,
+    model.data.locStoragePalette,
+    model.copyToClipboard,
+    model.data.preMadePalettes
+  );
+};
+
+preMadePalettes();
+
+//Control Website Color Preview
+const controlWebsiteColorPreview = () => {
+  //toggling nav container business theme mobile version
+  businessThemeMobile.addHandler();
+  //Rendering manual settings
+  websiteColorPreviewView.renderManualSettings(model.data.wcpSettings);
+  //Rendering popup settings
+  websiteColorPreviewView.renderPopupSettings(model.data.wcpSettings);
+  //Rendering retrieved colors from user's loc. storage
+  websiteColorPreviewView.renderPaletteColors(model.getDataLocalStorage);
+  //Handlers
+  websiteColorPreviewView.addHandler();
+};
+
+controlWebsiteColorPreview();
+
+//__________________________________________________________________________________________________________________________
+//Initialize globally tooltip functionality
+const controlTooltip = () => {
+  view.initTooltip();
+};
+controlTooltip();
 
 //Init color picker
 const initPicker = () => {
   view.renderPickers();
   view.pickerAttributes();
   colorGeneratorView.renderColorFromPicker();
+  websiteColorPreviewView.initHidePicker();
+  websiteColorPreviewView.initRenderColorFromPicker();
+  websiteColorPreviewView.initClosePalettesIfPicker();
 };
 initPicker();
-
-//Initialize globally tooltip functionality
-const controlTooltip = () => {
-  view.initTooltip();
-};
-controlTooltip();
 
 // Initialize PDF generation
 const initPDFGen = () => {

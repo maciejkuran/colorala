@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>colorala - Pre-made Color Palettes!</title>
+    <link rel="icon" type="image/x-icon" href="/src/img/Colorala avatar.png" />
+    <meta
+      name="description"
+      content="Explore trending hand-picked color palettes of colorala. Color Palettes for Designers and Artists - all made with love."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- --------- GOOGLE ANALYTICS ---------- -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-X147WWY90R"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-X147WWY90R');
+    </script>
+    <!-- //////////////
+    Scripts executed in order - async -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+      integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"
+    ></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer type="module" src="/src/js/controller.js"></script>
+
+    <link rel="stylesheet" href="/src/scss/main.scss" />
+  </head>
+  <body>
+    <app-nav></app-nav>
+    <header class="pre-made-colors-header">
+      <h1 class="h1">Pre-made color palettes!</h1>
+      <h2 class="h2">
+        Explore hand-picked color palettes for Designers and Artists 🤍
+      </h2>
+      <div class="buttons-wrapper">
+        <button class="filter-btn active-filter-btn">All</button>
+        <button class="filter-btn">Dark</button>
+        <button class="filter-btn">Light</button>
+        <button class="filter-btn">Mix</button>
+      </div>
+    </header>
+    <section class="pre-made-palettes-container"></section>
+
+    <!-- Displaying tooltips -->
+    <div class="div-tooltip"></div>
+
+    <p class="added-to-palette-confirmation-label">Added ❤</p>
+    <p class="added-to-palette-error-label">❌ Already Added</p>
+    <p class="copied-to-clipboard-label">🟢 Copied</p>
+
+    <from-creator-popup></from-creator-popup>
+
+    <a class="from-creator-btn from-creator-btn-app-page" href=""
+      >From Creator 😀</a
+    >
+
+    <cookies-popup></cookies-popup>
+    <div class="overlay-modal hide"></div>
+    <div class="overlay-modal-cookies hide"></div>
+  </body>
+</html>

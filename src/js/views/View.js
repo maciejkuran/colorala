@@ -10,7 +10,6 @@ export default class View {
   #addedErrorLabel = document.querySelector('.added-to-palette-error-label');
   #myPaletteContainer = document.querySelector('.my-palette');
   copiedLabel = document.querySelector('.copied-to-clipboard-label');
-  #pickerPlacementsHTML = document.querySelectorAll('.clr-picker-placement');
   #exportBtn = document.querySelector('.export-btn');
   #timeoutHolder;
 
@@ -176,9 +175,13 @@ export default class View {
 
   //render color pickers
   renderPickers() {
-    if (!this.#pickerPlacementsHTML) return;
+    const pickerPlacementsHTML = document.querySelectorAll(
+      '.clr-picker-placement'
+    );
 
-    this.#pickerPlacementsHTML.forEach(label => {
+    if (!pickerPlacementsHTML) return;
+
+    pickerPlacementsHTML.forEach(label => {
       const colorPicker = document.createElement('button');
       label.after(colorPicker);
       //pickr config

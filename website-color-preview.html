@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>colorala - Website Color Preview!</title>
+    <link rel="icon" type="image/x-icon" href="/src/img/Colorala avatar.png" />
+    <meta
+      name="description"
+      content="Website Color Preview! Test live selected colors. Check now with colorala new tool what your color scheme looks like."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"
+    />
+    <!-- --------- GOOGLE ANALYTICS ---------- -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-X147WWY90R"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-X147WWY90R');
+    </script>
+    <!-- //////////////
+    Scripts executed in order - async -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+      integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"
+    ></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer type="module" src="/src/js/controller.js"></script>
+
+    <link rel="stylesheet" href="/src/scss/main.scss" />
+  </head>
+
+  <body>
+    <app-nav></app-nav>
+    <!-- NOTE: 'wcp' - stands for 'website color preview' -->
+    <header class="wcp-header">
+      <h1 class="h1"><span>BETA</span> Website Color Preview!</h1>
+      <h2 class="h2">Check out what your color scheme looks like 🤍</h2>
+    </header>
+    <nav class="wcp-nav">
+      <div class="wcp-action-buttons">
+        <div>
+          <button
+            data-tooltip="Settings"
+            class="action-button wcp-icon wcp-hamburger-btn"
+          >
+            <i class="ri-menu-add-line"></i>
+          </button>
+
+          <button
+            data-tooltip="Instructions"
+            class="action-button wcp-icon instruction-btn"
+          >
+            <i class="ri-information-fill"></i>
+          </button>
+
+          <button data-tooltip="Reset" class="action-button wcp-icon reset-btn">
+            <i class="ri-restart-line"></i>
+          </button>
+        </div>
+        <div class="device-switch">
+          <button
+            data-viewtype="laptop"
+            data-tooltip="Laptop View"
+            class="action-button wcp-icon view-btn active-view-btn"
+          >
+            <i class="ri-macbook-line"></i>
+          </button>
+
+          <button
+            data-viewtype="mobile"
+            data-tooltip="Mobile View"
+            class="action-button wcp-icon view-btn"
+          >
+            <i class="ri-smartphone-line"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="wcp-instructions-container">
+        <h4>How does it work? 🤔</h4>
+        <ul>
+          <li>
+            <i class="ri-arrow-right-s-line"></i>Choose between laptop/mobile
+          </li>
+          <li>
+            <i class="ri-arrow-right-s-line"></i>Click on the object itself in
+            order to change a color of a certain element or optionally ...
+          </li>
+          <li>
+            <i class="ri-arrow-right-s-line"></i>Click on the hamburger icon to
+            open all the settings and change colors there!
+          </li>
+          <li>
+            <i class="ri-arrow-right-s-line"></i>Use color picker or choose
+            colors straight from your library!
+          </li>
+        </ul>
+      </div>
+
+      <div class="wcp-mega-container">
+        <div class="wcp-settings-container"></div>
+      </div>
+    </nav>
+
+    <div class="wcp-simulator">
+      <section
+        data-viewtype="laptop"
+        class="wcp-device wcp-laptop-view-container view-active user-choice-body"
+      >
+        <div class="browser-bar">
+          <div class="left">
+            <span class="dot" style="background: #ed594a"></span>
+            <span class="dot" style="background: #fdd800"></span>
+            <span class="dot" style="background: #5ac05a"></span>
+          </div>
+          <input
+            type="text"
+            placeholder="https://colorala.com/website-color-preview"
+          />
+        </div>
+        <div class="universal-theme--container">
+          <business-theme-laptop></business-theme-laptop>
+        </div>
+      </section>
+
+      <section
+        data-viewtype="mobile"
+        class="wcp-device wcp-mobile-view-container user-choice-body"
+      >
+        <div class="wcp-mobile-content">
+          <business-theme-mobile></business-theme-mobile>
+        </div>
+      </section>
+    </div>
+
+    <!-- __________________
+    Here are 'popup settings' inserted from JS
+    __________________ -->
+    <div class="inserted-popup-settings"></div>
+
+    <div class="div-tooltip"></div>
+
+    <p class="added-to-palette-confirmation-label">Added ❤</p>
+    <p class="added-to-palette-error-label">❌ Already Added</p>
+    <p class="copied-to-clipboard-label">🟢 Copied</p>
+
+    <from-creator-popup></from-creator-popup>
+
+    <a class="from-creator-btn from-creator-btn-app-page" href=""
+      >From Creator 😀</a
+    >
+
+    <cookies-popup></cookies-popup>
+    <div class="overlay-modal hide"></div>
+    <div class="overlay-modal-cookies hide"></div>
+  </body>
+</html>
