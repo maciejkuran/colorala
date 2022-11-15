@@ -8,8 +8,6 @@
 
 [colorala - LIVE APP](https://colorala.com)
 
-<b>Current version: 2.0</b>
-
 <i>Creator: Maciej Kuran-Janowski</i>
 
 > In my repositories you may find 2 colorala repositories. Don't be confused. The current repo for this project remains `/colorala.com`. I refactored the entire application code taking inspiration from the <b>MVC architecture pattern</b>. The code in its current form is clean to me. The old source code is available in the repository `/colorala.com-old`.
