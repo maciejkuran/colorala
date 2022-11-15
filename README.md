@@ -4,13 +4,13 @@
 
 <b>For designers, developers ... for everybody! 🤍</b>
 
-🔥 Check latest `Website Color Preview` tool where you can see live what your color scheme looks like!
+> 🔥 Check latest 'Website Color Preview' tool where you can see live what your color scheme looks like!
 
 [colorala - LIVE APP](https://colorala.com)
 
 <i>Creator: Maciej Kuran-Janowski</i>
 
-> In my repositories you may find 2 colorala repositories. Don't be confused. The current repo for this project remains `/colorala.com`. I refactored the entire application code taking inspiration from the <b>MVC architecture pattern</b>. The code in its current form is clean to me. The old source code is available in the repository `/colorala.com-old`.
+> In my repositories you may find 2 colorala repositories. Don't be confused. The current repo for this project remains `/colorala.com`. I refactored the entire application code from scratch, taking inspiration from the <b>MVC architecture pattern</b>. The code in its current form is clean to me. The old source code is available in the repository `/colorala.com-old`.
 
 # Available tools
 
