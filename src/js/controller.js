@@ -55,13 +55,15 @@ controlPopups();
 
 //Controlling color generator
 const controlColorGenerator = () => {
+  colorGeneratorView.addIntroDivMobile();
+
   colorGeneratorView.addHandler(
     model.RGBtoHEX,
     model.copyToClipboard,
     model.saveToLocalStorage,
     model.data.locStoragePalette
   );
-  colorGeneratorView.addIntroDivMobile();
+  // colorGeneratorView.addIntroDivMobile();
 };
 controlColorGenerator();
 

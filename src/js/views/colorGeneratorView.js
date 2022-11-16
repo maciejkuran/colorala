@@ -10,12 +10,12 @@ class ColorGeneratorView extends View {
   #addToPaletteBtns = document.querySelectorAll('.add-to-palette-btn');
   #mainTag = document.querySelector('.main-app');
   #introAppDesktop = document.querySelector('.intro-app');
-
   #holdGeneratedColors;
 
   addHandler(RGBtoHEX, copyToClipboard, saveToLocalStorage, locStoragePalette) {
     //Generating colors on btns click
-    this.#generateColorsBtn.forEach(btn =>
+    const generateBtns = document.querySelectorAll('.generate-colors-btn');
+    generateBtns?.forEach(btn =>
       btn.addEventListener('click', () => this.#generateColors(RGBtoHEX))
     );
     //Generating colors on DOMContentLoaded
