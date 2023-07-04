@@ -6,7 +6,7 @@
 
 > 🔥 Check latest 'Website Color Preview' tool where you can see live what your color scheme looks like!
 
-[colorala - LIVE APP](https://colorala.com)
+[colorala - LIVE APP](https://colorala.vercel.app/)
 
 <i>Creator: Maciej Kuran-Janowski</i>
 
