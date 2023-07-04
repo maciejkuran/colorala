@@ -105,8 +105,8 @@ footer {
 .app-nav {
   @include flexCenter(space-between, center);
   padding: 2rem;
-  max-width: 100%;
   margin: auto;
+  max-width: 150rem;
 
   img {
     max-width: 22rem;
@@ -893,6 +893,8 @@ footer {
 .wcp-nav {
   margin-left: 2rem;
   margin-top: 0.5rem;
+  max-width: 135rem;
+  width: 100%;
 
   button {
     font-size: 3.5rem;
