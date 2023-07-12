@@ -10,7 +10,9 @@
 
 <i>Creator: Maciej Kuran-Janowski</i>
 
-> In my repositories you may find 2 colorala repositories. Don't be confused. The current repo for this project remains `/colorala.com`. I refactored the entire application code from scratch, taking inspiration from the <b>MVC architecture pattern</b>. The code in its current form is clean to me. The old source code is available in the repository `/colorala.com-old`.
+> In my repositories you may find 2 colorala repositories. Don't be confused. The current repo for this project remains `/colorala`. I refactored the entire application code from scratch, taking inspiration from the <b>MVC architecture pattern</b>. The code base in its current form is clean to me. The old source code is available in the repository `/colorala.com-old`.
+
+> Colorala application is moved from domain `colorala.com` to `colorala.vercel.app`
 
 # Available tools
 
