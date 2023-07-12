@@ -1,4 +1,4 @@
-# colorala.com
+# colorala
 
 <p align="center"><img width="1000" src="/src/img/Colorala banner 2.jpg"></p>
 
